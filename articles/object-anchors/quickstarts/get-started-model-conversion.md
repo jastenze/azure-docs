@@ -125,7 +125,7 @@ Now, you can go ahead and convert your 3D model.
 For common modes of asset conversion failure, the `Azure.MixedReality.ObjectAnchors.Conversion.AssetConversionProperties` object obtained from the `Value` field in the `Azure.MixedReality.ObjectAnchors.Conversion.AssetConversionOperation` contains an ErrorCode field of the `ConversionErrorCode` type. This type enumerates these common modes of failure for error message localization, failure recovery, and tips to the user on how the error can be corrected.
 
 | Error Code                    | Description                       |  Mitigation                       |
-| ---                      | ---                               | ---                               |
+| ---                           | ---                               | ---                               |
 | INVALID_ASSET_URI | The asset at the URI provided when starting the conversion job could not be found. | When triggering an asset conversion job, provide an upload URI obtained from the service where the asset to be converted has been uploaded. |
 | INVALID_JOB_ID | The provided ID for the asset conversion job to be created was set to the default all-zero GUID. | If a GUID is specified when creating an asset conversion job, ensure it is not the default all-zero GUID. |
 | INVALID_GRAVITY | The gravity vector provided when creating the asset conversion job was a fully zeroed vector. | When starting an asset conversion, provide the gravity vector which corresponds to the uploaded asset. |
